@@ -1,0 +1,89 @@
+body{
+  background-image: url("lime/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+*{
+  font-family: sans-serif;
+  color: white;
+}
+.container{
+  background-color:  rgba(0, 0, 0, 0.5);
+  margin: auto;
+  width: 1000px;
+  border-radius: 10px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+/* quelle che antecedono il commento sono stili riferiti all'intero foglio, sotto sono raggruppate per zone ben definite del codice */
+/* stili riguardanti l'header */
+header, main{
+  width: 90%;
+  margin: auto;
+}
+header >img{
+  display: block;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 8px;
+}
+header >h1{
+  color: lime;
+  margin: auto;
+  text-align: center;
+  font-weight: normal;
+}
+nav{
+  background-color: lime;
+  text-align: center;
+  padding: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+nav > button{
+  display: inline;
+  margin: auto;
+  color: initial;
+}
+/* avendo terminato la stilizzazione dell'header procedo con il main */
+main > div{
+  margin-left: 3%;
+  margin-top: 3%;
+}
+h3:before{
+   content: ' \25FD';
+   margin: 0px;
+   padding: 0px;
+}
+h3{
+  margin: 0;
+}
+section:before{
+  content: ' \21A6';
+}
+div > section, p{
+  font-size: 14px;
+  color: lightgray;
+  padding: 2px;
+  padding-bottom: 0px;
+  margin: 0;
+}
+/* creo delle classi che raggruppo in fondo per ottenere le barre di carica dei monopattini */
+.caricaGino{
+  width: 35%;
+  height: 1.7em;
+  background-color: #edb545;
+  border-radius: 5px;
+}
+.caricaMike{
+  width: 60%;
+  height: 1.7em;
+  background-color: #29bd19;
+  border-radius: 5px;
+}
+.caricaFede{
+  width: 15%;
+  height: 1.7em;
+  background-color: #bd3c3c;
+  border-radius: 5px;
+}
